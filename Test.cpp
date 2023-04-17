@@ -79,6 +79,10 @@ TEST_CASE("Substracts") {
 TEST_CASE("test") {
     CHECK_THROWS(Fraction(3, 0)); // Division by zero is undefined
     CHECK_THROWS(Fraction(0, 0)); // Division by zero is undefined
+    Fraction a(0, 1234);
+    CHECK(a == 0.0);
+    CHECK(Fraction (2, 4) == Fraction(1,2));
+    
 }
 
 TEST_CASE("ostream") {
